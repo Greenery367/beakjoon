@@ -11,9 +11,9 @@ for _ in range(1,t+1):
         current_values = 0
         for j in range(len(boxes)-i):
             if boxes[i] > boxes[j]:
+                print(boxes[i], boxes[j])
                 current_values += 1
         if current_values > max_v :
-            print(current_values)
             max_v = current_values
     print(f"#{_} {max_v}")
 
